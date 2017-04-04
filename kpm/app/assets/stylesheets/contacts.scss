@@ -1,0 +1,141 @@
+// Place all the styles related to the contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#containerCM {
+    font-family: kaushan script;
+    width: 957px;
+    margin: 0px auto;
+    color: #00be9c;
+}
+
+#contactMe {
+    width: 957px;
+    text-align: center;
+    font-size: 48px;
+    margin: 0px;
+    height: 100px;
+}
+
+#contactMe hr {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    color: #24ffd8;
+    background-color: #24ffd8;
+    border-color: #24ffd8;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+#pageContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+input {
+    font-size: 16px;
+    padding: 10px;
+    margin: 0 0 5px 0;
+    border: 1px solid #24ffd8;
+    width: 90%;
+    font-weight: 100;
+}
+
+#contactMeForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 500px;
+    padding: 0px;
+}
+
+form {
+    color: #156456;
+}
+
+#formLeft {
+    display: flex;
+    flex-direction: column;
+}
+
+#formRight {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+textarea {
+    font-size: 16px;
+    padding: 10px;
+    margin: 0px;
+    border: 1px solid #24ffd8;
+    display: block;
+}
+
+label {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#submitButtonDiv {
+    align-self: flex-end;
+}
+
+#submitButton {
+    color: white;
+    background-color: #00be9c;
+    font-family: Lato;
+    font-size: 16px;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+#contactInfo {
+    font-family: Lato;
+    font-size: 24px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 200px;
+    margin: 5% auto;
+}
+
+#contactInfo a {
+    color: #00be9c;
+}
+
+#contactTop {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+#contactImg {
+  background-image: url(megaphone2.png);
+  height: 50px;
+  width: 50px;
+}
+
+#contactLI {
+  background-image: url(lilogo.png);
+  height: 75px;
+  width: 75px;
+  display: flex;
+  align-self: center;
+}
+
+.contactLI {
+  display: flex;
+  align-self: center;
+}

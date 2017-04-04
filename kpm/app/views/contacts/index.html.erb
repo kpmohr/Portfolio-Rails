@@ -1,0 +1,37 @@
+    <div id="containerCM">
+        <div id="contactMe">
+            <hr class="left">Contact Me
+            <hr class="right">
+        </div>
+        <div id="pageContainer">
+            <div id="contactMeForm">
+              <%= form_for(@contact) do |f| %>
+
+                    <%= f.label :fullname %>
+                    <%= f.text_field :fullname %> <br>
+
+                    <%= f.label :email %>
+                    <%= f.text_field :email %> <br>
+
+                    <%= f.label :phone %>
+                    <%= f.text_field :phone %> <br>
+
+                    <%= f.label :message %>
+                    <%= f.text_area :message, cols: 40, row: 30 %> <br>
+
+                    <%= f.submit :class => "button" %>
+
+            <% end %>
+            </div>
+            <div id="contactInfo">
+                <div id="contactTop">
+                    <div id="contactInfoStuff">
+                        <strong>Telephone:</strong> 203.448.6447
+                        <br><strong>Email:</strong> <a href="mailto:kpmohr@gmail.com">kpmohr@gmail.com</a>
+                    </div>
+                    <div id="contactImg"></div>
+                </div>
+                <a href="http://www.linkedin.com/in/kaitlyn-mohr/" class="contactLI"><div id="contactLI"></div></a>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,360 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {
+    background-image: url(s5-3.png);
+    background-repeat: repeat;
+    font-family: Lato;
+}
+
+#container {
+    width: 957px;
+    margin: 0 auto;
+}
+
+
+/*Index Page - Header Section*/
+
+#firstImage {
+  background-image: url(firstPic.png);
+}
+
+header {
+    max-height: 100px;
+    width: 957px;
+    font-family: Lato;
+    font-weight: 200;
+    font-size: 18px;
+    padding: 25px 25px 25px 20px;
+    text-decoration: none;
+    color: grey;
+}
+
+.header-nav {
+  text-decoration: none;
+}
+
+.homePageImage {
+    width: 957px;
+    height: 405px;
+    position: relative;
+    transition: width 5s;
+}
+
+#firstImage {
+    width: 957px;
+    height: 405px;
+    margin: 0;
+}
+
+#name {
+    position: absolute;
+    top: 25%;
+    left: 15px;
+    padding: 5px;
+    background-color: #b3cda6;
+    font-family: Lato;
+    font-weight: 100;
+    font-size: 50px;
+    color: white;
+    width: 275px;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+
+/*Index Page - Image Link Section*/
+
+#imageLinks {
+    width: 957px;
+    margin: 20px auto 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#resume {
+    width: 315px;
+    height: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resumePic {
+    width: 315px;
+    height: 315px;
+    border-radius: 315px;
+    background: rgba(0, 0, 0, 0) url(travel.jpg);
+    background-size: 100%;
+    border: 2px white solid;
+    position: relative;
+    transition: background-color 1s;
+}
+
+.resumeText {
+    font-size: 42px;
+    font-weight: 300;
+    color: white;
+    text-shadow: 2px 2px black;
+    z-index: 2;
+    position: absolute;
+}
+
+.resumePic:hover {
+    width: 315px;
+    height: 315px;
+    border-radius: 315px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.resumePic:before {
+    position: absolute;
+    width: 315px;
+    height: 315px;
+    border-radius: 315px;
+    background-color: inherit;
+    content: ' ';
+}
+
+#portfolio {
+    width: 315px;
+    height: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.portfolioPic {
+    width: 315px;
+    height: 315px;
+    border-radius: 315px;
+    background: rgba(0, 0, 0, 0) url(ski.jpg);
+    background-size: 100%;
+    border: 2px white solid;
+    position: relative;
+    transition: background-color 1s;
+}
+
+.portfolioText {
+    font-size: 42px;
+    font-weight: 300;
+    color: white;
+    text-shadow: 2px 2px black;
+    z-index: 5;
+    position: absolute;
+}
+
+.portfolioPic:hover {
+    width: 315px;
+    height: 315px;
+    border-radius: 315px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.portfolioPic:before {
+    position: absolute;
+    width: 315px;
+    height: 315px;
+    border-radius: 315px;
+    background-color: inherit;
+    content: ' ';
+}
+
+#contact {
+    width: 315px;
+    height: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactPic {
+    width: 315px;
+    height: 315px;
+    border-radius: 315px;
+    background: rgba(0, 0, 0, 0) url(goat.jpg);
+    background-size: 100%;
+    border: 2px white solid;
+    position: relative;
+    transition: background-color 1s;
+    display: flex;
+}
+
+.contactText {
+    font-size: 42px;
+    font-weight: 300;
+    color: white;
+    text-shadow: 2px 2px black;
+    z-index: 5;
+    position: absolute;
+}
+
+.contactPic:hover {
+    width: 315px;
+    height: 315px;
+    border-radius: 315px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contactPic:before {
+    position: absolute;
+    width: 315px;
+    height: 315px;
+    border-radius: 315px;
+    background-color: inherit;
+    content: ' ';
+}
+
+
+/*Index Page - About Me Section*/
+
+.aboutMe {
+    width: 800px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+
+#aboutMeTitle {
+    font-size: 24px;
+    text-decoration: underline;
+    color: grey;
+    width: 150px;
+    padding-top: 50px;
+    font-family: kaushan script;
+}
+
+#aboutMeDoc {
+    font-size: 18px;
+    font-weight: 400;
+    width: 525px;
+    color: grey;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*Resume Page*/
+
+#containerR {
+    font-family: kaushan script;
+    width: 957px;
+    margin: 0px auto;
+    color: #00be9c;
+}
+
+#resumeHeader {
+    width: 957px;
+    text-align: center;
+    font-size: 48px;
+    margin: 0px;
+    height: 100px;
+}
+
+#resumeHeader hr {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    color: #24ffd8;
+    background-color: #24ffd8;
+    border-color: #24ffd8;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+#pageContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#sideBar {
+    width: 15%;
+    background-color: rgba(150, 150, 150, 0.6);
+    height: 500px;
+}
+
+.onSB {
+    background-color: rgba(150, 150, 150, 0.8);
+    color: white;
+}
+
+.offSB {
+    color: #00be9c;
+}
+
+#resumeSB {
+    padding: 15px;
+}
+
+#skillsSB {
+    padding: 15px;
+}
+
+#skillsInfo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    display: none;
+}
+
+#resumeImgs {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#pageOne {
+    background-image: url(KPMResumeP1.jpg);
+    height: 450px;
+    width: 348px;
+    margin: 0;
+}
+
+#pageTwo {
+    background-image: url(KPMResumeP2.jpg);
+    height: 450px;
+    width: 348px;
+}
+
+#download {
+    display: flex;
+    align-self: flex-end;
+}
+
+button {
+    color: white;
+    background-color: #00be9c;
+    font-family: Lato;
+    font-size: 16px;
+    margin: 10px auto;
+    padding: 5px;
+}
+

@@ -1,0 +1,327 @@
+// Place all the styles related to the portfolios controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+    background-image: url(s5-3.png);
+    background-repeat: repeat;
+    font-family: Lato;
+}
+
+#containerP {
+    width: 100%;
+}
+
+.headerP {
+    font-family: kaushan script;
+    width: 957px;
+    margin: 0px auto;
+    color: #00be9c;
+}
+
+#portfolioHeader {
+    text-align: center;
+    font-size: 48px;
+    margin: 8% 0 0 0;
+    height: 100px;
+    font-family: kaushan script;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#topContainer {
+    background: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(portfolio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#nameP {
+    font-size: 325%;
+    font-family: kaushan script;
+    color: rgba(250, 250, 250, 0.25);
+    z-index: 1;
+    position: absolute;
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.25);
+}
+
+#title {
+    font-size: 90%;
+    font-family: kaushan script;
+    color: rgba(250, 250, 250, 1);
+    z-index: 2;
+    position: absolute;
+    padding: 2% 0 0 0;
+}
+
+#bubbles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+#marketing {
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#marketingTitle {
+    font-family: kaushan script;
+    font-size: 36px;
+    color: white;
+}
+
+hr {
+    align-self: center;
+    width: 150px;
+    height: 3px;
+    background-color: white;
+    margin: 20px 0 10px 0;
+}
+
+.viewHere {
+    font-family: Lato;
+    color: white;
+    font-size: 18px;
+}
+
+#webDev {
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#webDevTitle {
+    font-family: kaushan script;
+    font-size: 36px;
+    color: white;
+}
+
+#triangle {
+    z-index: 20;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 20px;
+    width: 100%;
+}
+
+#leftTri {
+    float: left;
+    width: 400px;
+}
+
+.triangleLeft {
+    width: 2px;
+    height: 1px;
+    border-bottom: 100px solid rgb(250, 250, 250);
+    border-right: 400px solid transparent;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.lineLeft {
+    width: 475px;
+    height: 10px;
+    background-color: #00be9c;
+    transform: rotate(14deg);
+    padding: 0;
+    float: left;
+    margin: 50px 0 0 -15px;
+}
+
+.triangleScroll {
+    left: -20px;
+    width: 2px;
+    height: 1px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 25px solid rgba(250, 250, 250, 0.8);
+    margin: 5px;
+    float: left;
+    margin-bottom: 1%;
+}
+
+.triangleScroll:hover {
+    width: 2px;
+    height: 1px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 25px solid rgba(250, 250, 250, 0.5);
+    margin: 5px;
+    float: left;
+    margin-bottom: 1%;
+}
+
+.triangleRight {
+    width: 2px;
+    height: 1px;
+    border-bottom: 100px solid rgb(250, 250, 250);
+    border-left: 400px solid transparent;
+    margin: 0px;
+    float: left;
+}
+
+.lineRight {
+    width: 475px;
+    height: 10px;
+    background-color: #00be9c;
+    transform: rotate(166deg);
+    padding: 0;
+    float: right;
+    margin: 50px -15px 0 0;
+}
+
+
+/*Spacer*/
+
+.spacer {
+    padding: 5px;
+}
+
+
+/*Web Development Portfolio*/
+
+#wdContainer {
+    min-height: 100vh;
+    height: auto;
+    width: 957px;
+    margin: 20px auto;
+    align-content: center;
+    background-color: rgba(150, 150, 150, 0.4);
+}
+
+#wdTitle {
+    align-content: center;
+    color: #00be9c;
+    font-family: kaushan script;
+    font-size: 48px;
+    padding: 20px auto;
+    align-self: center;
+}
+
+#wdPortfolio {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project {
+    height: 150px;
+    width: 250px;
+    border: 5px solid grey;
+    background-color: white;
+    margin: 10px;
+}
+
+
+/*Marketing Portfolio*/
+
+#mkContainer {
+    width: 957px;
+    height: 175px;
+    margin: 0px auto;
+    position: relative;
+}
+
+#mkInside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mkTitle {
+    align-content: center;
+    color: #00be9c;
+    font-family: kaushan script;
+    font-size: 48px;
+    padding: 20px;
+    align-self: center;
+    height: 150px;
+}
+
+.mk-project {
+    float: left;
+    margin: 0 25px 0 25px;
+    font-size: 18px;
+    width: 250px;
+    min-width: 250px;
+    display: block;
+    height: 150px;
+    border: 5px solid grey;
+    background-color: white;
+}
+
+#slide {
+    position: absolute;
+    left: 0;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+}
+
+#leftArrow {
+    position: absolute;
+    left: 10px;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.leftArrow {
+    width: 2;
+    height: 2;
+    border-top: 15px solid transparent;
+    border-right: 30px solid #00be9c;
+    border-bottom: 15px solid transparent;
+    margin: 3px;
+    float: left;
+}
+
+#rightArrow {
+    position: absolute;
+    right: 10px;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.rightArrow {
+    width: 2;
+    height: 2;
+    border-top: 15px solid transparent;
+    border-left: 30px solid #00be9c;
+    border-bottom: 15px solid transparent;
+    margin: 3px;
+    float: left;
+}
+
+#mkItems {
+    width: 600px;
+    height: 100%;
+    position: absolute;
+    left: 35%;
+    margin-left: -180px;
+    overflow: hidden;
+}

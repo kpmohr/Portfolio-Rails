@@ -1,0 +1,12 @@
+  <div id="contactShowController">
+    <h1>People who have contacted you!</h1>
+    <% @contacts.each do |contact| %>
+      <div>
+        <p><%= contact.fullname %></p>
+        <p><%= contact.email %></p>
+        <p><%= contact.phone %></p>
+        <p><%= contact.message %></p>
+        <p><%= contact.created_at.strftime("Printed on %m/%d/%Y at %I:%M%p") %></p>
+        </div>
+      <% end %>
+  </div>
