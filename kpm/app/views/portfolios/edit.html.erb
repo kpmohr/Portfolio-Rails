@@ -1,9 +1,9 @@
-<div id="porfolioNewContainer">
+<div id="porfolioShowContainer">
 <div class="nav-portfolio">
   <button><%= link_to "ALL", :portfolios_all %></button>
   <button><%= link_to "NEW", :new_portfolio %></button>
 </div>
-  <h1>Add new data to profolio:</h1>
+  <h1>Edit porfolio stuff:</h1>
   <div class="form">
     <%= form_for(@portfolio) do |f| %>
         <%= f.label "Name of Project (show):" %>

@@ -1,0 +1,19 @@
+<div id="porfolioAllContainer">
+<div class="nav-portfolio">
+  <button><%= link_to "ALL", :portfolios_all %></button>
+  <button><%= link_to "NEW", :new_portfolio %></button>
+</div>
+  <h1>Show porfolio stuff for edit/review:</h1>
+  <div class="show">
+    <%= @portfolios.each do |portfolio| %>
+        <div>
+            <p>Name: <%= link_to portfolio.name, portfolio_path(portfolio.id) %></p>
+            <p>Id: <%= portfolio.id %></p>
+            <p>Type: <%= portfolio.topic %></p>
+            <p>product: <%= portfolio.product %></p>
+            <p>Description: <%= portfolio.description %></p>
+            <p>Image: <img src=<%= portfolio.image_url %> /></p>
+        </div>
+    <% end %>
+  </div>
+</div>

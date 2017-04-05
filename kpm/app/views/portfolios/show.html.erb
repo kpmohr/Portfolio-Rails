@@ -1,0 +1,16 @@
+<div id="porfolioShowContainer">
+<div class="nav-portfolio">
+  <button><%= link_to "ALL", :portfolios_all %></button>
+  <button><%= link_to "NEW", :new_portfolio %></button>
+</div>
+  <h1>Show porfolio stuff for edit/review:</h1>
+  <div class="show">
+        <p>Name: <%= @portfolio.name %></p>
+        <p>Type: <%= @portfolio.topic %></p>
+        <p>product: <%= @portfolio.product %></p>
+        <p>Description: <%= @portfolio.description %></p>
+        <p>Image: <img src=<%= @portfolio.image_url %> /></p>
+        <button><%= link_to "Edit", edit_portfolio_path(@portfolio.id) %></button>
+        <button><%= link_to 'Delete', @portfolio, method: :delete, data: { confirm: "Are you sure?"} %></button>
+  </div>
+</div>
